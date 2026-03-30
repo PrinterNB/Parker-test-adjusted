@@ -4,6 +4,8 @@ const phrases = [
   'Creative Problem Solver',
   'Open Source Enthusiast',
   'Coffee-Powered Coder',
+  'Tech Enthusiast',
+  'Innovation Seeker',
 ];
 
 const typingEl = document.getElementById('typing-text');
