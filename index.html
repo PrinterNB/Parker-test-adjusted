@@ -1,0 +1,216 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Parker — Developer &amp; Creator</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800;900&display=swap" rel="stylesheet" />
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+
+  <!-- ===== NAV ===== -->
+  <nav>
+    <span class="nav-logo">Parker.</span>
+    <ul class="nav-links">
+      <li><a href="#about">About</a></li>
+      <li><a href="#skills">Skills</a></li>
+      <li><a href="#projects">Projects</a></li>
+      <li><a href="#contact">Contact</a></li>
+    </ul>
+  </nav>
+
+  <!-- ===== HERO ===== -->
+  <section id="hero">
+    <div class="orb orb-1"></div>
+    <div class="orb orb-2"></div>
+    <div class="orb orb-3"></div>
+
+    <div class="hero-content">
+      <span class="hero-badge">✦ Available for work</span>
+      <h1 class="hero-title">
+        Hey, I'm <span class="gradient-text">Parker</span>
+      </h1>
+      <p class="hero-subtitle">
+        <span id="typing-text"></span><span class="type-cursor"></span>
+      </p>
+      <div class="hero-cta">
+        <a href="#projects" class="btn btn-primary">See my work</a>
+        <a href="#contact" class="btn btn-outline">Get in touch</a>
+      </div>
+    </div>
+  </section>
+
+  <!-- ===== ABOUT ===== -->
+  <section id="about">
+    <div class="container">
+      <div class="about-grid">
+        <div class="avatar-wrap reveal">
+          <div class="avatar-ring">
+            <div class="avatar-inner">🧑‍💻</div>
+          </div>
+        </div>
+
+        <div class="about-text reveal">
+          <span class="section-label">About me</span>
+          <h2 class="section-title">Turning ideas into<br /><span class="gradient-text">digital reality</span></h2>
+          <p>
+            I'm Parker — a passionate developer who loves crafting clean, performant,
+            and beautiful digital experiences. Whether it's a slick web app or a clever
+            automation, I bring creativity and precision to every project.
+          </p>
+          <p>
+            When I'm not coding, you'll find me exploring new technologies, contributing
+            to open-source, or brewing the perfect cup of coffee. ☕
+          </p>
+          <div class="stats-row">
+            <div class="stat">
+              <div class="stat-num">50+</div>
+              <div class="stat-label">Projects built</div>
+            </div>
+            <div class="stat">
+              <div class="stat-num">5+</div>
+              <div class="stat-label">Years coding</div>
+            </div>
+            <div class="stat">
+              <div class="stat-num">∞</div>
+              <div class="stat-label">Cups of coffee</div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ===== SKILLS ===== -->
+  <section id="skills">
+    <div class="container">
+      <span class="section-label reveal">What I work with</span>
+      <h2 class="section-title reveal">My <span class="gradient-text">Skill Set</span></h2>
+      <p class="section-desc reveal">
+        A curated toolkit refined over years of building real-world products.
+      </p>
+
+      <div class="skills-grid">
+        <div class="skill-card reveal">
+          <span class="skill-icon">⚛️</span>
+          <div class="skill-name">React</div>
+          <div class="skill-bar"><div class="skill-fill" style="--fill:0.92"></div></div>
+        </div>
+        <div class="skill-card reveal">
+          <span class="skill-icon">🟨</span>
+          <div class="skill-name">JavaScript</div>
+          <div class="skill-bar"><div class="skill-fill" style="--fill:0.95"></div></div>
+        </div>
+        <div class="skill-card reveal">
+          <span class="skill-icon">🐍</span>
+          <div class="skill-name">Python</div>
+          <div class="skill-bar"><div class="skill-fill" style="--fill:0.88"></div></div>
+        </div>
+        <div class="skill-card reveal">
+          <span class="skill-icon">🎨</span>
+          <div class="skill-name">CSS / Design</div>
+          <div class="skill-bar"><div class="skill-fill" style="--fill:0.90"></div></div>
+        </div>
+        <div class="skill-card reveal">
+          <span class="skill-icon">🗄️</span>
+          <div class="skill-name">Node.js</div>
+          <div class="skill-bar"><div class="skill-fill" style="--fill:0.85"></div></div>
+        </div>
+        <div class="skill-card reveal">
+          <span class="skill-icon">☁️</span>
+          <div class="skill-name">Cloud / DevOps</div>
+          <div class="skill-bar"><div class="skill-fill" style="--fill:0.78"></div></div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ===== PROJECTS ===== -->
+  <section id="projects">
+    <div class="container">
+      <span class="section-label reveal">What I've built</span>
+      <h2 class="section-title reveal">Featured <span class="gradient-text">Projects</span></h2>
+      <p class="section-desc reveal">
+        A selection of projects I'm proud of — from side experiments to production apps.
+      </p>
+
+      <div class="projects-grid">
+        <div class="project-card reveal">
+          <span class="project-emoji">🚀</span>
+          <h3>LaunchKit</h3>
+          <p>A full-stack SaaS boilerplate with auth, billing, and a beautiful dashboard — ship your idea in hours, not weeks.</p>
+          <div class="tags">
+            <span class="tag">React</span>
+            <span class="tag">Node.js</span>
+            <span class="tag">Stripe</span>
+          </div>
+        </div>
+
+        <div class="project-card reveal">
+          <span class="project-emoji">🧠</span>
+          <h3>Cerebro</h3>
+          <p>An AI-powered personal knowledge base that automatically links related notes and surfaces insights you'd otherwise miss.</p>
+          <div class="tags">
+            <span class="tag">Python</span>
+            <span class="tag">OpenAI</span>
+            <span class="tag">Vector DB</span>
+          </div>
+        </div>
+
+        <div class="project-card reveal">
+          <span class="project-emoji">🌍</span>
+          <h3>Atlas</h3>
+          <p>A real-time collaborative world-building tool for writers and game designers, with live maps and lore management.</p>
+          <div class="tags">
+            <span class="tag">TypeScript</span>
+            <span class="tag">WebSockets</span>
+            <span class="tag">Postgres</span>
+          </div>
+        </div>
+
+        <div class="project-card reveal">
+          <span class="project-emoji">⚡</span>
+          <h3>Flux</h3>
+          <p>A zero-config performance monitoring library that gives you instant flamegraphs and bottleneck alerts with one line of code.</p>
+          <div class="tags">
+            <span class="tag">JavaScript</span>
+            <span class="tag">Rust WASM</span>
+            <span class="tag">Open Source</span>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ===== CONTACT ===== -->
+  <section id="contact">
+    <div class="container">
+      <div class="contact-card reveal">
+        <span class="section-label">Let's talk</span>
+        <h2 class="section-title">Got a cool <span class="gradient-text">idea?</span></h2>
+        <p>
+          I'm always open to hearing about new projects, creative collaborations,
+          or just a good conversation about tech. My inbox is always open.
+        </p>
+        <a href="mailto:hello@parker.dev" class="btn btn-primary">Say hello 👋</a>
+        <div class="social-links">
+          <a href="#" class="social-link">🐙 GitHub</a>
+          <a href="#" class="social-link">🐦 Twitter / X</a>
+          <a href="#" class="social-link">💼 LinkedIn</a>
+          <a href="#" class="social-link">📝 Blog</a>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ===== FOOTER ===== -->
+  <footer>
+    <p>Designed &amp; built by <strong>Parker</strong> · 2025 · Made with ❤️ and ☕</p>
+  </footer>
+
+  <script src="script.js"></script>
+</body>
+</html>
