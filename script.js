@@ -11,26 +11,35 @@ let phraseIndex = 0;
 let charIndex = 0;
 let isDeleting = false;
 let typingTimeout;
+const TYPING_SPEED = 100; // Consistent typing speed
+const DELETING_SPEED = 60; // Consistent deleting speed
+const PAUSE_SPEED = 1500; // Pause speed between phrases
 
 function type() {
   const current = phrases[phraseIndex];
-
+  
   if (isDeleting) {
+    // Deleting characters
     typingEl.textContent = current.slice(0, charIndex--);
-    typingTimeout = setTimeout(type, 60);
+    typingTimeout = setTimeout(type, DELETING_SPEED);
   } else {
+    // Typing characters
     typingEl.textContent = current.slice(0, charIndex++);
-    typingTimeout = setTimeout(type, charIndex <= current.length ? 100 : 1500);
+    typingTimeout = setTimeout(type, TYPING_SPEED);
   }
 
+  // Switch to deleting when we've finished typing
   if (!isDeleting && charIndex > current.length) {
     isDeleting = true;
     clearTimeout(typingTimeout);
-    typingTimeout = setTimeout(type, 1500);
-  } else if (isDeleting && charIndex < 0) {
+    typingTimeout = setTimeout(type, PAUSE_SPEED);
+  } 
+  // Switch to typing next phrase when we've finished deleting
+  else if (isDeleting && charIndex < 0) {
     isDeleting = false;
     phraseIndex = (phraseIndex + 1) % phrases.length;
-    typingTimeout = setTimeout(type, 300);
+    charIndex = 0; // Reset character index for next phrase
+    typingTimeout = setTimeout(type, PAUSE_SPEEDD);
   }
 }
 
